@@ -13,6 +13,14 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\50579698890\\Desktop\\projeto-gamer-backEnd\\wwwroot\\img\\Equipes\\download (1).png",
+      "PackagePath": "staticwebassets\\img\\Equipes\\download (1).png"
+    },
+    {
+      "Id": "C:\\Users\\50579698890\\Desktop\\projeto-gamer-backEnd\\wwwroot\\img\\Equipes\\download.png",
+      "PackagePath": "staticwebassets\\img\\Equipes\\download.png"
+    },
+    {
       "Id": "C:\\Users\\50579698890\\Desktop\\projeto-gamer-backEnd\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

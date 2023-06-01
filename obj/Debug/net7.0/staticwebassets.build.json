@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "uR+MkJ5ESr2/WrbpGJurDCtZH29OvpgvP4YsuYKuNHk=",
+  "Hash": "dxFExrMJygEPRopoMD02TqTfxe8fD76GjPeqy7PMpqU=",
   "Source": "projeto-gamer-backEnd",
   "BasePath": "_content/projeto-gamer-backEnd",
   "Mode": "Default",
@@ -83,6 +83,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\50579698890\\Desktop\\projeto-gamer-backEnd\\wwwroot\\img\\Equipes\\download (1).png",
+      "SourceId": "projeto-gamer-backEnd",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\50579698890\\Desktop\\projeto-gamer-backEnd\\wwwroot\\",
+      "BasePath": "_content/projeto-gamer-backEnd",
+      "RelativePath": "img/Equipes/download (1).png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\Equipes\\download (1).png"
+    },
+    {
+      "Identity": "C:\\Users\\50579698890\\Desktop\\projeto-gamer-backEnd\\wwwroot\\img\\Equipes\\download.png",
+      "SourceId": "projeto-gamer-backEnd",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\50579698890\\Desktop\\projeto-gamer-backEnd\\wwwroot\\",
+      "BasePath": "_content/projeto-gamer-backEnd",
+      "RelativePath": "img/Equipes/download.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\Equipes\\download.png"
     },
     {
       "Identity": "C:\\Users\\50579698890\\Desktop\\projeto-gamer-backEnd\\wwwroot\\js\\site.js",

@@ -24,6 +24,7 @@
         <th>Id</th>
         <th>Nome</th>
         <th>Imagem</th>
+        <th>Ações</th>
     </thead>
 
     <tbody>
@@ -34,6 +35,9 @@
                 <td>@equipe.NomeEquipe</td>
                 <td>
                     <img src="/img/Equipes/@equipe.ImagemEquipe" alt="Imagem da equipe @equipe.NomeEquipe" width="50px">
+                </td>
+                <td>
+                    <a asp-area="" asp-controller="Equipe" asp-action="Excluir" asp-route-id="@equipe.IdEquipe">Excluir</a>
                 </td>
             </tr>
         }
