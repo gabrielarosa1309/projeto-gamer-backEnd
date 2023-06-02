@@ -18665,6 +18665,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\50579698890\\Desktop\\projeto-gamer-backEnd\\Views\\Jogador\\Index.cshtml",
+      "TargetPath": "Views\\Jogador\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\50579698890\\Desktop\\projeto-gamer-backEnd\\Views\\_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
       "FileKind": "mvc"
