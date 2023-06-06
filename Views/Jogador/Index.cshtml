@@ -6,9 +6,9 @@
 
 <h1>Tela de Jogadores</h1>
 
-<form method="post" action='@Url.Action("Cadastrar")' enctype="multipart/form-data">
+<form method="post" action='@Url.Action("Cadastrar")'>
 
-    <label for=""></label>Nome</label>
+    <label for="">Nome</label>
     <input type="text" name="Nome" required>
 
     <label for="">Email</label>
@@ -17,8 +17,14 @@
     <label for="">Senha</label>
     <input type="password" name="Senha">
 
-    <label for="">Id da Equipe</label>
-    <input type="text" name="Id da Equipe">
+    <label for="">Equipe</label>
+    <select name="IdEquipe" id="IdEquipe">
+        <option value="0">Selecione uma opção: </option>
+        @foreach (Equipe equipe in ViewBag.Equipe)
+        {
+            <option value="@equipe.IdEquipe">@equipe.NomeEquipe</option>
+        }
+    </select>
 
     <button type="submit">Cadastrar</button>
 

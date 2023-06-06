@@ -58,7 +58,7 @@ namespace projeto_gamer_backEnd.Controllers
         [Route("Excluir/{id}")]
         public IActionResult Excluir(int id)
         {
-            Jogador jogadorBuscado = c.Jogador.FirstOrDefault(e => e.IdJogador == id);
+            Jogador jogadorBuscado = c.Jogador.FirstOrDefault(j => j.IdJogador == id);
 
             c.Remove(jogadorBuscado);
 
@@ -70,9 +70,11 @@ namespace projeto_gamer_backEnd.Controllers
         [Route("Editar/{id}")]
         public IActionResult Editar(int id)
         {
-            Jogador jogador = c.Jogador.First(x => x.IdJogador == id);
+            Jogador jogador = c.Jogador.First(j => j.IdJogador == id);
 
             ViewBag.Jogador = jogador;
+
+            ViewBag.Equipe = c.Equipe.ToList();
 
             return View("Edit");
         }
@@ -87,7 +89,7 @@ namespace projeto_gamer_backEnd.Controllers
             jogadorEditado.SenhaJogador = form["SenhaJogador"].ToString();
             jogadorEditado.IdEquipe = int.Parse(form["IdEquipe"].ToString());
 
-            Jogador jogadorBuscado = c.Jogador.First(X => X.IdJogador == jogadorEditado.IdEquipe);
+            Jogador jogadorBuscado = c.Jogador.First(j => j.IdJogador == jogadorEditado.IdJogador);
 
             jogadorBuscado.NomeJogador = jogadorEditado.NomeJogador;
             jogadorBuscado.EmailJogador = jogadorEditado.EmailJogador;
@@ -95,7 +97,6 @@ namespace projeto_gamer_backEnd.Controllers
             jogadorBuscado.IdEquipe = jogadorEditado.IdEquipe;
 
             c.Jogador.Update(jogadorBuscado);
-
             c.SaveChanges();
 
             return LocalRedirect("~/Jogador/Listar");
