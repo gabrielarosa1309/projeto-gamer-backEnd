@@ -84,6 +84,7 @@ namespace projeto_gamer_backEnd.Controllers
         {
             Jogador jogadorEditado = new Jogador();
 
+            jogadorEditado.IdJogador = int.Parse(form["IdJogador"].ToString());
             jogadorEditado.NomeJogador = form["NomeJogador"].ToString();
             jogadorEditado.EmailJogador = form["EmailJogador"].ToString();
             jogadorEditado.SenhaJogador = form["SenhaJogador"].ToString();
