@@ -1,0 +1,27 @@
+@Model Jogador
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edição de Jogador</h1>
+
+<form method="post" action="@Url.Action("Atualizar")" enctype="multipart/form-data">
+
+    <input type="hidden" name="IdJogador" value="@ViewBag.Jogador.IdJogador">
+
+    <label for="">Nome</label>
+    <input type="text" name="NomeJogador" value="@ViewBag.Jogador.NomeJogador">
+
+    <label for="">Email</label>
+    <input type="text" name="EmailJogador" value="@ViewBag.Jogador.EmailJogador">
+
+    <label for="">Senha</label>
+    <input type="text" name="SenhaJogador" value="@ViewBag.Jogador.SenhaJogador">
+
+    <label for="">Id da Equipe</label>
+    <input type="text" name="IdEquipe" value="@ViewBag.Jogador.IdEquipe">
+
+    <button type="submit">Atualizar</button>
+
+</form>

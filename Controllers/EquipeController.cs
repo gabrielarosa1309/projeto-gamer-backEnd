@@ -28,7 +28,7 @@ namespace projeto_gamer_backEnd.Controllers
         {
             //variável q armazena as equipes listadas do banco de dados
             ViewBag.Equipe = c.Equipe.ToList();
-            
+
             //retorna a view de equipe (tela)
             return View();
         }
@@ -45,7 +45,7 @@ namespace projeto_gamer_backEnd.Controllers
             if (form.Files.Count > 0)
             {
                 var file = form.Files[0];
-                var folder = Path.Combine(Directory.GetCurrentDirectory(),"wwwroot/img/Equipes");
+                var folder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/img/Equipes");
 
                 if (!Directory.Exists(folder))
                 {
@@ -113,7 +113,7 @@ namespace projeto_gamer_backEnd.Controllers
             if (form.Files.Count > 0)
             {
                 var file = form.Files[0];
-                var folder = Path.Combine(Directory.GetCurrentDirectory(),"wwwroot/img/Equipes");
+                var folder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/img/Equipes");
 
                 if (!Directory.Exists(folder))
                 {
