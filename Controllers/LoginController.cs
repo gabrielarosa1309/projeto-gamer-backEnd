@@ -46,8 +46,17 @@ namespace projeto_gamer_backEnd.Controllers
                 HttpContext.Session.SetString("UserName", jogadorBuscado.NomeJogador);
                 return LocalRedirect("~/");
             }
-
+            
+            Message = "Dados inválidos!";
             return LocalRedirect("~/Login/Login");
+        }
+
+        [Route ("Logout")]
+        public IActionResult Logout()
+        {
+            HttpContext.Session.Remove("UserName");
+
+            return LocalRedirect("~/");
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

@@ -43,7 +43,7 @@ namespace projeto_gamer_backEnd.Controllers
             novoJogador.NomeJogador = form["Nome"].ToString();
             novoJogador.EmailJogador = form["Email"].ToString();
             novoJogador.SenhaJogador = form["Senha"].ToString();
-            novoJogador.IdEquipe = int.Parse(form["Id da Equipe"].ToString());
+            novoJogador.IdEquipe = int.Parse(form["IdEquipe"].ToString());
 
             //adiciona objeto na tabela do banco de dados
             c.Jogador.Add(novoJogador);
